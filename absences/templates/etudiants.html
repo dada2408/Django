@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enregistrer une absence</title>
+</head>
+<body>
+    <h1>Enregistrer une absence</h1>
+    <form action="/submit_absence" method="post">
+        <label for="student">Étudiant :</label>
+        <select id="student" name="student">
+            <option value="1">Étudiant 1</option>
+            <option value="2">Étudiant 2</option>
+            <option value="3">Étudiant 3</option>
+            <!-- Ajoutez d'autres options pour les étudiants ici -->
+        </select><br><br>
+        
+        <label for="course">Cours :</label>
+        <select id="course" name="course">
+            <option value="1">Cours 1</option>
+            <option value="2">Cours 2</option>
+            <option value="3">Cours 3</option>
+            <!-- Ajoutez d'autres options pour les cours ici -->
+        </select><br><br>
+
+        <label for="date">Date de l'absence :</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="reason">Raison de l'absence :</label><br>
+        <textarea id="reason" name="reason" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enregistrer">
+    </form>
+</body>
+</html>
